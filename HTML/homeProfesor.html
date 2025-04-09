@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/homeAlumno.css">
+    <link rel="stylesheet" href="../CSS/homeProfesor.css">
+    <link rel="stylesheet" href="../SRC/icon/css/all.css">
+    <title>Monitor de Rendimiento Academico</title>
+</head>
+<body>
+    <section class="container">
+        <header class="container_header">
+           <section class="container_Subheader">
+            <nav class="header_container-nav">
+                <div class="header_menu-resposive responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav_lista responsive-lista">
+                    <div class="nav_reposive-icoClose responsive-lis">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <li class="lista_items" id="cambioInicio">Inicio</li>
+                    <li class="lista_items" id="cambioCurso">Cursos</li>
+                    <li class="lista_items" id="dataMaestra">Data maestra</li>
+                    <li class="lista_items">Perfil</li>
+                </ul>
+            </nav>
+            <div class="header_container-person">
+                <h2 class="container_person-name"></h2>
+                <div class="header_Notification">
+                    <i class="fa-solid fa-bell" id="Notificacion"></i>
+                </div>
+                <div class="container_person-close" id="userExit">
+                    <i class="fa-regular fa-user" ></i>
+                    <i class="fa-solid fa-sort-down"></i>
+
+                </div>
+                <div class="container_list-exit list_user-exit" >
+                    <ul class="lista_exit">
+                        <li class="item_list-exit" id="ci_list">N/A</li>
+                        <li class="divider"></li>
+                        <li class="item_list-exit item_exit">Cambiar contraseña</li>
+                        <li class="item_list-exit item_exit" id="cerrarSesion" title="Cerrar sesión" >Cerrar sesión</li>
+                    </ul>
+                </div>
+            </div>
+           </section>
+        </header>
+        <main class="container_inicio container_Cursos" id="incioPage">
+            <section class="container_seccion-A container_seccion-items1">
+               
+            </section>
+            <section class="container_seccion-A container_seccion-items2">
+                <div class="list-cursos-A list_estudiante-A hidden" id="listaEstudiantesDelprofesor">
+                    <div class="retroceder-list-icon">
+                        <i class="fa-solid fa-arrow-left" id="retroceder_icon"></i>
+                    </div>
+                    <h1 class="list_title-cursos">Curso de <span id="name_lista_curso-asignatura">Matematica I</span></h1>
+                    <div class="table_cursos-A">
+                        <div class="list_date-A">
+                            <h3 class="item_ci">Cedula</h3>
+                            <h3 class="item_aprobado">Aprobado</h3>
+                            <h3 class="item_examen">Tipo de examen</h3>
+                            <h3 class="item_nota">Nota</h3>
+                        </div>
+                        <div class="cursos_items" id="EstudiantesCursos">
+                           
+                        </div>
+                    </div>
+               </div>
+               <div class="list-cursos-A " id="listaDelProfesor">
+                    <h1 class="list_title-cursos">Lista de Cursos Impartidos</h1>
+                    <ul class="cursos_items" id="listaCursosImpartidos">
+
+                    </ul>
+               </div>
+            </section>
+            <section class="container_seccion-A  container_seccion-items3 proceso_asginaturas">
+                <div class="proceso_asignaturas-title">
+                    <h2>Asignaturas disponibles</h2>
+                </div>
+                <div id="cursosDisponibles">
+
+                </div>
+              
+            </section>
+            <section class="container_seccion-A  container_seccion-items4 proceso_asginaturas" >
+                <div class="proceso_asignaturas-title">
+                    <h2>Asignaturas dadas</h2>
+                </div>
+                <div id="AsignaturasDadas"></div>
+               
+            </section>
+        </main>
+
+        <main class="container_Cursos hidden" id="cursosPage">
+            <section class="container_items container_item-1" >
+                <h2 class="list_tilte">Cursos</h2>
+                <div class="divider divider-pro"></div>
+                <ul class="cursos_list" id="cursos_impartidos">
+                    
+
+                </ul>
+
+            </section>
+            <section class="container_items container_item-2" >
+
+                <div class="moment_date-curso hidden" id="moment_date-curso-error">
+                   <div class="content_img-date-error">
+                    <img class="moment_data-img" src="../SRC/img/5203299.jpg" alt="Selecciona un curso">
+                   </div>
+                </div>
+
+                <div class="moment_date-curso" id="moment_date-curso">
+                    <h1 class="moment_data-title">Seleccione un curso</h1>
+                   <div class="content_img-date">
+                    <img class="moment_data-img" src="../SRC/img/3908138.jpg" alt="Selecciona un curso">
+                   </div>
+                </div>
+
+                <div class="items_A items_A-1 hidden" id="especificaciones_curso-itemA">
+                   <div class="A1_item-1">
+                        <h1 class="curso_nombre" id="Especificaciones_curso-asignatura">Matematica discretas I</h1>
+                        <h3 class="curso_seccion" id="Especificaciones_curso-seccion">C1</h3>
+                   </div>
+                    <div class="A1_item-2">
+                        <h3 class="curso_periodo-Academico" id="Especificaciones_curso-periodo">01-2023</h3>
+                        <h3 class="curso_codigo" id="Especificaciones_curso-codigo">2342</h3>
+                    </div>
+                </div>
+                <div class="items_A items_A-2 hidden" id="Especificaciones_curso">
+
+                </div>
+
+            </section>
+            <div class="container_items background_img">
+
+            </div>
+            <div class="container_items container_item-3 ">
+                <h1 id="container_3-h1" class="hidden">Seleccione a un estudiante</h1>
+               <section class="tabla_calificaciones hidden">
+                    <h2 class="tabla_atribute-title" id="calificaciones_title">12340294</h2>
+                    <div class="tabla_atribute" id="calificaciones">
+                        <div class="Fila_tabla">
+                            <div class="curso_tabla-activi cursos_columna"><h4>Actividad</h4></div>
+                            <div class="curso_tabla-obr cursos_columna"><h4>Observaciones</h4></div>
+                            <div class="curso_tabla-realiza cursos_columna"><h4>Realizada</h4></div>
+                            <div class="curso_tabla-hora cursos_columna"><h4>Hora</h4></div>
+                            <div class="curso_tabla-nota cursos_columna"><h4>Nota</h4></div>
+
+                        </div>
+
+                    </div>
+               </section>
+            </div>
+        </main>
+
+    </section>
+
+ <!--INPUTS PARA CARGAR ARCHIVOS-->
+ <div class="contenedor_load-file" id="contenedor_load-file">
+    <div class="load_file">
+
+        <div class="file_items  file_item-title">
+            <h1>¡Cargue archivos!</h1>
+        </div>
+            
+            <div class="file_items load_file-profe">
+
+            <h3>Seleccionar archivo Asignatura.txt</h3>
+           <label for="asignatura" class="btn_file">Cargar file 1</label>
+           <input type="file" name="asignatura" id="asignatura" class="items_file-inputs" hidden>
+
+           <h3>Seleccionar archivo Aprendizaje.txt</h3>
+           <label for="aprendizaje" class="btn_file">Cargar file 2</label>
+           <input type="file" name="aprendizaje" id="aprendizaje" class="items_file-inputs" hidden>
+
+            <h3>Seleccionar archivo Actividad.txt</h3>
+            <label  for="actividades" class="btn_file">Cargar file 3</label>
+            <input type="file" name="actividades" id="actividades" class="items_file-inputs" hidden>
+
+            <h3>Seleccionar archivo NotasActividades.txt</h3>
+            <label  for="notasxactividades" class="btn_file">Cargar file 4</label>
+            <input type="file" name="notasxactividades" id="notasxactividades" hidden>
+
+            <h3>Seleccionar archivo Profesor.txt</h3>
+            <label  for="profesor" class="btn_file">Cargar file 5</label>
+            <input type="file" name="profesor" id="profesor" hidden>
+        </div>
+        <div class="file_items resultadoCarga" id="resultadoCarga">
+            <button class="btn_file btn_result hidden" id="btn_result" style="border:none;" disabled>Continuar</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <div class="container_Ajuste-general hidden" id="container_Ajuste-general">
+        <div class="ajustes_notas-close">
+            <i class="fa-solid fa-xmark" id="close_notaGeneral-icon"></i>
+        </div>
+        <h3 class="ajustes_notas-title">Asignaturas impartidas</h3>
+        <!--FORMULARIO DE ESTUDIANTES EN ASIGNATURA-->
+        <h3 class="ajustes_notas-title" id="name_estudiante_curso_general">Edwyn guzman</h3>
+        <form action="" class="formActividad" id="formAsignatura">
+            <div class="input_ajuste">
+                <!--Se muestra la actual en caso de que tenga y se le da la opcion de cambiarla-->
+                <i class="fa-regular fa-flag" id="ajuste_imput-icon"></i>
+                <input class="input_ajuste-input" name="notaAsignatura" type="text" placeholder="Nota" id="inputGeneralAlumnoNota"  >
+            </div>
+
+            <div class="input_ajuste">
+                <!--Se muestra la actual en caso de que tenga y se le da la opcion de cambiarla-->
+                <i class="fa-regular fa-file-lines" id="ajuste_imput-icon"></i>
+                <input class="input_ajuste-input" name="tipoExamen" type="text" placeholder="Tipo de actividad" id="inputGeneralAlumnoActiviadad"  >
+            </div>
+
+            <input id="submitInfoAsignatura" type="submit" value="Submit" hidden>
+
+            <button class="ajuste_nota-btn" id="btn_actualizar_general">Guardar</button>
+            <!-- onclick="saveInfoAsignatura('29897058', '6201')"> -->
+        </form>
+    </div>
+
+
+
+   <div class="container_ajuste-notas hidden" id="modal_Ajuste-actividades">
+    <div class="ajustes_notas-close">
+        <i class="fa-solid fa-xmark" id="close_notas-icon"></i>
+    </div>
+     <!--FORMULARIO DE ESTUDIANTES EN ACTIVIDAD DE LA ASIGNATURA-->
+     <h3 class="ajustes_notas-title">Nota de la actividad</h3>
+     <form action="" class="formActividad" id="formActividad">
+
+         <div class="input_ajuste">
+            <i class="fa-regular fa-clock" id="ajuste_imput-icon"></i>
+             <input class="input_ajuste-input" name="horas" type="text" placeholder="Hora" id="ajusteshoras_input"  >
+         </div>
+
+         <div class="input_ajuste">
+            <i class="fa-regular fa-eye" id="ajuste_imput-icon"></i>
+             <input class="input_ajuste-input" name="observaciones" type="text" placeholder="Observaciones" id="ajustesObservaciones_input"  >
+         </div>
+
+         <div class="input_ajuste">
+            <i class="fa-regular fa-flag" id="ajuste_imput-icon"></i>
+             <input class="input_ajuste-input" name="notaEstudiante" type="text" placeholder="Nota" id="ajustesNotas_input"  >
+         </div>
+
+         <input id="submitInfoActividad" type="submit" value="Submit" hidden>
+
+     </form>
+     <button class="ajuste_nota-btn"  id="btn_ajusteNotas">Guardar</button>
+     <!-- onclick="saveInfoActividad('1', '6201', '29897058')" -->
+   </div>
+
+   
+    <script src="../JS/homeProfesor.js"></script>
+</body>
+</html>

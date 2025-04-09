@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/homeAlumno.css">
+    <link rel="stylesheet" href="../SRC/icon/css/all.css">
+    <title>Monitor de Rendimiento Académico</title>
+</head>
+<body cz-shortcut-listen="true">
+
+    <section class="container">
+        <header class="container_header">
+           <section class="container_Subheader">
+            <nav class="header_container-nav">
+                <div class="header_menu-resposive responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav_lista responsive-lista">
+                    <div class="nav_reposive-icoClose responsive-lis">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <li class="lista_items" id="inicio">Inicio</li>
+                    <li class="lista_items" id="materias">Asignaturas</li>
+                    <li class="lista_items" id="dataMaestra">Data maestra</li>
+                    <li class="lista_items">Perfil</li>
+                </ul>
+            </nav>
+            <div class="header_container-person">
+                <h2 class="container_person-name"></h2>
+                <div class="header_Notification">
+                    <i class="fa-solid fa-bell" id="Notificacion"></i>
+                </div>
+                <div class="container_person-close" id="userExit">
+                    <i class="fa-regular fa-user" ></i>
+                    <i class="fa-solid fa-sort-down"></i>
+                    
+                </div>
+                <div class="container_list-exit list_user-exit" >
+                    <ul class="lista_exit">
+                        <li class="item_list-exit" id="ci_list">N/A</li>
+                        <li class="divider"></li>
+                        <li class="item_list-exit item_exit">Cambiar contraseña</li>
+                        <li class="item_list-exit item_exit" id="cerrarSesion" title="Cerrar sesión" >Cerrar sesión</li>
+                    </ul>
+                </div>
+            </div>
+           </section>
+        </header>
+        <main class="container_main" id="template_Inicio">
+     
+                <section class="main_items main_item-1 main_item-container-1">
+                    <h1 class="main_items-title">Expediente académico</h1>
+                   
+                    <div class="main_items-container">
+
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_user">N/A</span>
+                                <h3 class="items_props-name">Usuario</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Correo">N/A</span>
+                                <h3 class="items_props-name">Correo</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Eficiencia">N/A</span>
+                                <h3 class="items_props-name">Eficiencia</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_U-C">N/A</span>
+                                <h3 class="items_props-name">Unidades de credito</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_P-G">N/A</span>
+                                <h3 class="items_props-name">Promedio General</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Asig-A">N/A</span>
+                                <h3 class="items_props-name">Promedio Asignaturas</h3>
+                            </div>
+                        </div>
+                        <button onclick="descargarKardex()" class="btn_kardex">Descargar kardex</button>
+                    </div>
+                    <div></div>
+                </section>
+                <section class="main_items main_item-2 main_item-container-2">
+                    <h1 class="main_items-title">Asignaturas</h1>
+                    <div class="main_items-container">
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Inscrita">N/A</span>
+                                <h3 class="items_props-name">Inscritas</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Cursada">N/A</span>
+                                <h3 class="items_props-name">Cursadas</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Retirada">N/A</span>
+                                <h3 class="items_props-name">Retiradas</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Aplazada">N/A</span>
+                                <h3 class="items_props-name">Aplazadas</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Aprovada">N/A</span>
+                                <h3 class="items_props-name">Aprobadas</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Equivalencia">N/A</span>
+                                <h3 class="items_props-name">Equivalencia</h3>
+                            </div>
+                        </div>
+                        <div class="main_items-props main_item-prop-asig">
+                            <div class="items_props-icon">
+                                <i class="fa-solid fa-book"></i>
+                            </div>
+                            <div class="items_props-container">
+                                <span class="items_props-date" id="box_Total-A">N/A</span>
+                                <h3 class="items_props-name">Total Aprobadas</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div></div> 
+                </section>
+                <section class="main_items main_item-3">
+                    
+                    <h1 class="main_items-title">Asignaturas</h1>
+                    <div class="main_item-container-3" id="main_Materias">
+
+                    </div>
+                </section>
+                <section class="main_items main_item-4">
+            
+                </section>
+        </main>
+        
+
+        <main class="container_main template" id="template_materias" >
+
+            <section class="tabla_notas container_items-procesoMaterias">
+                <h3 class="tabla_title">Calificaciones por Asignatura</h3>
+                <div class="tabla_atribute" id="calificaciones">
+                   <div class="Fila_tabla">
+                        <div class="tabla_name tabla_columna"><h4>Asignatura</h4></div>
+                        <div class="tabla_id tabla_columna"><h4>Codigo</h4></div>
+                        <div class="tabla_UC tabla_columna"><h4>UC</h4></div>
+                        <div class="tabla_nota tabla_columna"><h4>Nota</h4></div>
+                   </div> 
+
+
+                </div>
+            
+            </section>
+            <section class="tabla_notas img_materia-tabla container_items-procesoMaterias">
+            
+            </section>
+            <!--INSCRIBIR-->
+            <section class="container_items-procesoMaterias" id="inscribirMateria">
+                <h1 class="item_procesoMaterias-text">Inscribir asignatura</h1>
+            </section>
+            <!--RETIRAR-->
+            <section class="container_items-procesoMaterias" id="retirarMateria">
+                <h1 class="item_procesoMaterias-text">Retirar asignatura</h1>
+
+
+            </section>
+       
+        </main>
+
+
+
+    </section>
+
+    <div class="contenedor_load-file" id="contenedor_load-file">
+        <div class="load_file">
+
+           <div class="file_items  file_item-title">
+                <h1>¡Cargue archivos!</h1> 
+             </div>
+           <div class="file_items">
+            <h3>Seleccionar archivo Asignatura.txt</h3>
+            <label  for="asignatura" class="btn_file">Cargar file 1</label>
+            <input type="file" name="asignatura" id="asignatura" class="items_file-inputs" hidden>
+
+            <pre id="asignaturaOut"></pre>
+
+            <h3>Seleccionar archivo Aprendizaje.txt</h3>
+            <label for="aprendizaje" class="btn_file">Cargar file 2</label>
+            <input type="file" name="aprendizaje" id="aprendizaje" class="items_file-inputs" hidden>
+
+            <pre id="aprendizajeOut"></pre>
+           </div>
+           <div class="file_items resultadoCarga" id="resultadoCarga">
+                <button class="btn_file btn_result btn_file-load" id="btn_result" style="border:none;">Continuar</button>
+           </div>
+
+        </div>
+    </div>
+
+  
+
+   
+
+    <script src="../JS/homeAlumno.js"></script>
+</body>
+</html>

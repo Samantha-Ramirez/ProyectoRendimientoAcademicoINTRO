@@ -1,0 +1,13 @@
+ID CARRERA; NOMBRE ASIGNATURA; CODIGO ASIGNATURA
+1;Algoritmos y Programación;6201
+1;Introducción a la Informática;6301
+1;Matemáticas I;8206
+1;Matemáticas Discretas I;6106
+1;Algoritmos y estructura de datos;6202
+1;Organización y estructura del computador;6001
+1;Matemáticas II;8207
+1;Matemáticas Discretas II;6107
+1;Ingeniería de Software;6203
+1;Organización y Estructura del Computador II;6002
+1;Matemáticas III;8202
+1;Bases de Datos;6303

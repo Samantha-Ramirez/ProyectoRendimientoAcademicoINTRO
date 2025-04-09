@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../SRC/icon/css/all.css">
+    <title>Monitor de Rendimiento Academico</title>
+
+</head>
+<body class="loger_Padre">
+    <section class="contaniner_loger">
+            <div class="loger_nav-icon">
+                <div class="nav_icon-vacio"> </div>
+                <div class="nav_container-close">
+                    <i class="fa-solid fa-xmark" id="loger_nav-close"></i>
+                </div>
+            </div>
+
+            <div class="sesion__formulario" id="login__content">
+                <h2 class="formulario__title">¡Bienvenido!</h2>
+                <!--FORM-->
+                <form action="" class="formulario_Container-input" id="signUpForm">
+
+                    <div class="Formulario__input-icon">
+                        <i class="fa-solid fa-user" id="formulario_icono"></i>
+                        <input name="nameUp" class="Formulario__input" type="text" placeholder="Nombre y Apellido">
+                    </div>
+
+                    <div class="Formulario__input-icon">
+                        <i class="fa-sharp fa-solid fa-key" id="formulario_icono"></i>
+                        <input name="ciUp" class="Formulario__input" type="text" placeholder="Cedula">
+                    </div>
+
+                    <div class="Formulario__input-icon">
+                        <i class="fa-solid fa-envelope" id="formulario_icono"></i>
+                        <input name="emailUp" class="Formulario__input" type="email" placeholder="Email">
+                    </div>
+
+                    <div class="Formulario__input-icon">
+                        <i class="fa-sharp fa-solid fa-key" id="formulario_icono"></i>
+                        <input name="passwordUp" class="Formulario__input" type="password" placeholder="Password">
+                    </div>
+
+                    <div class="Formulario__input-icon for_input-box-item">
+                        <div class="for_input-box-item">    
+                            <select name="profeUp" id="profe" class="SelecOptions">
+                                <option value="false">Soy alumno</option>
+                                <option value="true">Soy profesor</option>
+                            </select>
+                        </div>
+                            <div class="for_input-box-item">        
+                                <select name="prepaUp" id="prepa" class="SelecOptions">
+                                    <option value="false">No soy preparador</option>
+                                    <option value="true">Soy preparador</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <input id="submitUp" class="formulario__button" type="submit" value="Submit" hidden>
+
+                </form>
+                
+                <label for="readFile" class="formulario__button">Siguiente</label>
+                <p class="File_parrafo">Selecciona el archivo Alumno.txt / Profesor.txt</p>
+                <input id="readFile" type="file" name="readFileUp" hidden="">
+
+                <input id="writeFile" type="button" value="write" onclick="download()" hidden>
+
+                <p class="formulario__text">¿Ya estas registrado? <span id="modePage"><a href="SignIn.html">Incia sesión</a> </span></p>
+            
+        <div></div>
+    </section>
+    <script src="../JS/login.js"></script>
+
+</body>
+</html>

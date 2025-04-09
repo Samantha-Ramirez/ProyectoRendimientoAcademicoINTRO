@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../SRC/icon/css/all.css">
+    <title>Monitor de Rendimiento Academico</title>
+
+</head>
+<body class="loger_Padre">
+    <section class="contaniner_loger">
+            <div class="loger_nav-icon">
+                <div class="nav_icon-vacio"> </div>
+                
+                <div class="nav_container-close nav_icon-items">
+                    <i class="fa-solid fa-xmark" id="loger_nav-close"  id="nav_icon-close"></i>
+                </div>
+            </div>
+            <div class="sesion__formulario" id="login__content">
+                <h2 class="formulario__title">¡Hola, amigo!</h2>
+                <!--FORM-->
+                <form action="" class="formulario_Container-input" id="signInForm">
+
+                    <div class="Formulario__input-icon">
+                        <i class="fa-solid fa-user" id="formulario_icono"></i>
+                        <input name="emailIn" class="Formulario__input" type="email" placeholder="Email">
+                    </div>
+    
+                    <div class="Formulario__input-icon">
+                        <i class="fa-sharp fa-solid fa-key" id="formulario_icono"></i>
+                        <input name="passwordIn" class="Formulario__input" type="password" placeholder="Password">
+    
+                    </div>
+
+                    <div class="for_input-box-item">
+                        <select name="profeIn" id="profe" class="SelecOptions" style="min-width:230px;">
+                            <option value="false">Soy alumno</option>
+                            <option value="true">Soy profesor</option>
+                        </select>
+                    </div>
+
+                    <input id="submitIn" class="formulario__button" type="submit" value="Submit" hidden>
+
+                </form>
+                
+                <label for="readFile" class="formulario__button">Siguiente</label>
+                <p class="File_parrafo">Selecciona el archivo Alumno.txt / Profesor.txt</p>
+                <input type="file" name="readFileIn" id="readFile" hidden>
+                
+                <p class="formulario__text">¿No estas registrado? <span id="modePage"><a href="SignUp.html">Registrarse</a> </span></p>
+            </div>
+        <div></div>
+    </section>
+    <script src="../JS/login.js"></script>
+</body>
+</html>

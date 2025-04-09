@@ -1,0 +1,678 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorNavText:hsl(0, 10%, 68%);
+    --colorGlobal:#7EB2FD;
+    --colorTitle:#293043;
+    --colorSecundario:#FFFFFF;
+    --fontZiseTitulo:40px;
+    --fontZiseTitulo-h3:22px;
+    --fondoOpacity: rgba(0, 0, 0, 0.4);
+    --boxShadow: 0px 0px 20px -4px rgba(0,0,0,0.2);
+    --borderRadius:20px;
+    --colorHome:#69E0C3;
+    --colorDivider:#e0e0e0;
+    --opaccityBacgrund:rgb(0 0 0 / 14%);
+}
+
+.hidden{
+    display: none !important;
+}
+
+.load_file-profe {
+    width: 538px !important;
+    gap: 20px !important;
+}
+
+ul{
+    list-style: none;
+}
+
+.container_Cursos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 15px;
+    gap: 20px;
+ 
+}
+
+.container_items{
+    min-width: 350px;
+    min-height: 260px;
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+   
+
+}
+.container_item-1 {
+    padding: 15px 0px;
+}
+.divider-pro{
+    height: 2px !important;
+}
+
+.container_item-2 {
+    width: 60%;
+    padding: 20px;
+}
+
+
+.curso_estudiantes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid var(--colorDivider);
+}
+
+.background_img{
+    background-image: url("../SRC/img/3992745.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 250px;
+    padding: 10px;
+}
+
+.tabla_calificaciones {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cursos_columna {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    outline: 1px solid;
+}
+
+.curso_tabla-activi {
+    width: 22%;
+}
+
+.curso_tabla-obr {
+    width: 30%;
+}
+
+.curso_tabla-realiza {
+    width: 20%;
+}
+
+.curso_tabla-hora {
+    width: 20%;
+}
+
+.curso_tabla-nota {
+    width: 8%;
+}
+
+.curso_data-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    outline: 1px solid;
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 35px;
+}
+
+.content_img-date-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 215px;
+    width: 38%;
+}
+
+.curso_data-item1 {
+    width: 22%;
+    cursor: pointer;
+}
+
+.curso_data-item2 {
+    width: 30%;
+}
+
+.curso_data-item3 {
+    width: 20%;
+}
+
+.curso_data-item4 {
+    width: 20%;
+}
+.curso_data-item5 {
+    width: 8%;
+}
+
+.list_tilte {
+    letter-spacing: 1px;
+    padding: 6px 16px;
+    font-weight: 600;
+
+}
+
+.list_btn-actividades {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--colorSecundario);
+    background: var(--colorHome);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.cursos_list {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container_item-3 {
+    width: 40%;
+}
+
+.curso_item {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.curso_estudiantes h2 {
+    font-weight: 200;
+}
+
+.curso_item:hover {
+
+    background-color: var(--opaccityBacgrund);
+
+}
+
+.curso_estudiantes h2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+h1.curso_nombre {
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h3.curso_periodo-Academico {
+    font-weight: 100;
+}
+
+h3.curso_codigo {
+    font-weight: 200;
+}
+
+.curso_seccion{
+    font-weight: 100;
+}
+
+.items_A-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px;
+}
+
+.A1_item-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.A1_item-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_ajuste-notas {
+    position: fixed;
+    background-color: var(--colorSecundario);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    max-width: 380px;
+    height: 430px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    box-shadow: 0px 0px 56px -5px rgba(0,0,0,0.15);
+}
+
+.formActividad {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-around;
+
+}
+
+.ajustes_notas-close{
+    text-align: end;
+
+}
+
+.ajustes_notas-title {
+    font-weight: bold;
+    color: #c63939;
+}
+
+.ajustes_notas-close {
+    text-align: end;
+}
+
+.ajuste_nota-btn {
+    border: none;
+    padding: 15px 57px;
+    border-radius: 11px;
+    cursor: pointer;
+    color: var(--colorSecundario);
+    background: var(--colorHome);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.input_ajuste {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_ajuste-text {
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.input_ajuste-input:focus{
+    border-bottom:1px solid rgb(237, 89, 89);
+
+}
+
+.input_ajuste-input {
+    width: 53%;
+    padding: 10px;
+    padding-left: 32px;
+    outline: none;
+    border: none;
+    border-bottom:1px solid #69E0C3;
+    font-size: 15px;
+
+
+
+}
+
+
+.ajustes_notas-close {
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.content_img-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 215px;
+    width: 32%;
+}
+.moment_data-img {
+    object-fit: contain;
+    width: 100%;
+
+}
+.moment_date-curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ajuste_imput-icon {
+    position: absolute;
+    left: 105px;
+}
+
+#close_notas-icon {
+    padding: 6px 10px;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+
+#close_notas-icon:hover {
+    border-radius: 50%;
+    transition: background-color .4s ease;
+    background-color: var(--fondoOpacity);
+}
+
+.container_item-3 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #cd3e3e;
+    text-align: center;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.container_Ajuste-general{
+    position: fixed;
+    background-color: var(--colorSecundario);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    max-width: 380px;
+    height: 430px;
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    box-shadow: 0px 0px 56px -5px rgba(0,0,0,0.15);
+}
+
+
+
+h2#calificaciones_title {
+    font-weight: 600;
+    text-align: center;
+}
+
+#close_notaGeneral-icon{
+    padding: 6px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.container_seccion-A {
+    min-height: 300px;
+    width: 48%;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+}
+
+.list_estudiante-A {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 10px;
+}
+
+
+#CambiarValoreesGenerale {
+    cursor: pointer;
+}
+
+
+.item_nota {
+    width: 15.01%;
+    padding-left: 5px;
+   
+}
+
+
+.item_ci {
+    width: 29.2%;
+    border-right: 1px solid;
+}
+
+.student_name {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.student_apro {
+    width: 26.2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid;
+    padding-left: 5px;
+}
+
+.student_examen {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    width: 30.5%;
+    border-right: 1px solid;
+    height: 100%;
+}
+
+.student_nota {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.item_aprobado {
+    width: 26.2%;
+    border-right: 1px solid;
+    padding-left: 5px;
+}
+
+.student_list {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding-left: 6px;
+    outline: 1px solid;
+}
+
+.cursos_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.retroceder-list-icon {
+    font-size: 20px;
+    padding: 0px 5px;
+    height: 25px;
+}
+
+
+.list_date-A {
+    display: flex;
+    padding: 0px;
+    padding-left: 5px;
+    outline: 1px solid;
+    height: 30px;
+}
+
+.container_seccion-items1 {
+    width: 40%;
+}
+
+#retroceder_icon {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.list_title-cursos {
+    padding: 5px 3px;
+    font-size: 20px;
+}
+
+main.container_inicio {
+    justify-content: center;
+}
+
+.container_seccion-items4 {
+    width: 40%;
+}
+
+.container_seccion-items3 {
+    max-width: 50%;
+}
+
+#retroceder_icon:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: var(--fondoOpacity);
+}
+
+.table_cursos-A {
+    padding: 5px 5px;
+}
+
+#close_notaGeneral-icon:hover{
+    border-radius: 50%;
+    transition: background-color .4s ease;
+    background-color: var(--fondoOpacity);
+}
+
+.proceso_asginaturas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    gap: 7px;
+}
+.proceso_asignaturas-title {
+    padding-left: 6px;
+}
+
+.list-cursos-A {
+    padding: 11px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cursos_item-li {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 0px 5px;
+}
+
+.curso_item_li-date {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+
+.icon_btn_materia-mxd {
+    padding: 6px 6px !important;
+}
+
+
+#cotainerIcon {
+    width: 26px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursosImparatidos-icon {
+    padding: 7px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#cursosImparatidos-icon:hover{
+    transition: background-color .45s ease;
+    background-color: var(--fondoOpacity);
+}
+
+.student_list h3 {
+    font-weight: 500;
+    height: 100%;
+}
+
+
+.item_examen {
+    font-size: 16px;
+    width: 30%;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.curso_item_li-date h3 {
+    font-weight: 500;
+}
+
+ .container_seccion-items1{
+    background-image: url(../SRC/img/3573382.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    
+ }
+
+.list_date-A h3 {
+    display: flex;
+    align-items: center;
+}
+
+.load_file-profe {
+    width: 538px !important;
+    gap: 5px !important;
+}
+
+@media screen and (max-width:960px) {
+    .background_img{
+        display: none !important;
+    }
+
+    .container_seccion-A {
+        min-width: 80%;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .content_img-date{
+      
+        width: 50%;
+    }
+
+    .container_seccion-A {
+        min-width: 100%;
+    }
+}
